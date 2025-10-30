@@ -1,44 +1,27 @@
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Slider Animation */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
   }
-  to {
-    transform: rotate(360deg);
+  33.33% {
+    transform: translateX(0);
+  }
+  36.66% {
+    transform: translateX(-100%);
+  }
+  66.66% {
+    transform: translateX(-100%);
+  }
+  69.99% {
+    transform: translateX(-200%);
+  }
+  100% {
+    transform: translateX(-200%);
   }
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.animate-slide {
+  animation: slide 15s ease-in-out infinite;
 }

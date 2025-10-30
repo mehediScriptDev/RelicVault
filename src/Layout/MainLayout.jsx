@@ -1,14 +1,15 @@
-import React from 'react';
-import Hero from '../Pages/Hero';
-import Nav from '../Components/Nav/Nav';
-import Home from '../Router/Pages/Home';
+import { Outlet } from 'react-router';
+import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 
 const MainLayout = () => {
     return (
-        <div>
-            <Nav/>
-            <Hero></Hero>
-            <Home/>
+        <div className="flex flex-col min-h-screen">
+            <Navbar />
+            <main className="flex-grow">
+                <Outlet />
+            </main>
+            <Footer />
         </div>
     );
 };
