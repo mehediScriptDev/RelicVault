@@ -1,3 +1,3 @@
 
-  # convert js to js without functionalities
+  # convert js to ts without functionalities
   
