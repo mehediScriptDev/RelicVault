@@ -10,7 +10,7 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../co
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 import { mockArtifacts } from '../lib/mockData';
 import { useAuth } from '../lib/AuthContext';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 export function UpdateArtifact() {
   const { id } = useParams<{ id: string }>();

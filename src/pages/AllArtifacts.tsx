@@ -6,7 +6,7 @@ import { ArtifactCard } from '../components/ArtifactCard';
 import { mockArtifacts } from '../lib/mockData';
 import { Artifact } from '../lib/types';
 import { useAuth } from '../lib/AuthContext';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 export function AllArtifacts() {
   const { user } = useAuth();
